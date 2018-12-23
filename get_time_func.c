@@ -11,15 +11,15 @@
 // get microseconds of current time
 unsigned long current_time(void){
 	unsigned long   int         us; // Microseconds
-  time_t          s;  // Seconds
+  	time_t          s;  // Seconds
 	struct timespec spec;
 	clock_gettime(CLOCK_REALTIME, &spec);
 	s  = spec.tv_sec;
   
-  // Convert nanoseconds to microseconds
-  us = /*round*/(spec.tv_nsec / 1.0e3); 
+  	// Convert nanoseconds to microseconds
+  	us = /*round*/(spec.tv_nsec / 1.0e3); 
   
-  return us;
+ 	 return us;
 }
 
 
@@ -27,7 +27,7 @@ unsigned long current_time(void){
 unsigned long getsecs(void){
 
 	unsigned long            us; // Microseconds
-  time_t          s;  // Seconds
+  	time_t          s;  // Seconds
 	struct timespec spec;
 	clock_gettime(CLOCK_REALTIME, &spec);
 	s  = spec.tv_sec;
