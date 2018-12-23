@@ -1,3 +1,15 @@
+/*****************************************************************************
+ Copyright(C) .
+ All rights reserved.
+
+ @file   : get_time_func.c
+ @brief  : Get current time.
+ @author : zhanghao
+ @history:
+           2018-12-23    zhanghao    Created file
+******************************************************************************/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
