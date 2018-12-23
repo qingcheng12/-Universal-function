@@ -1,3 +1,15 @@
+/*****************************************************************************
+ Copyright(C) .
+ All rights reserved.
+
+ @file   : Get_angle_two_position.c
+ @brief  : 2-point GPS coordinates for azimuth determination.
+ @author : zhanghao
+ @history:
+           2018-12-23    zhanghao    Created file
+******************************************************************************/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
