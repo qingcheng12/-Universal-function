@@ -26,7 +26,11 @@ https://github.com/DemonCloud/dotfile
 
 # 3. #Pragma 指令
 在所有的预处理指令中，#Pragma 指令可能是最复杂的了，它的作用是设定编译器的状态或者是指示编译器完成一些特定的动作。#pragma指令对每个编译器给出了一个方法，在保持与C和C++语言完全兼容的情况下，给出主机或操作系统专有的特征。依据定义，编译指示是机器或操作系统专有的，且对于每个编译器都是不同的。  
-其格式一般为:  #pragma  para。  其中para为参数，下面来看一些常用的参数。  
+其格式一般为:  
+``` 
+#pragma  para  
+``` 
+其中para为参数，下面来看一些常用的参数。  
 
 ## (1) message参数
 其使用方法为：  
@@ -44,9 +48,9 @@ https://github.com/DemonCloud/dotfile
 
 ## (2) once参数
 
-•	``` #pragma one``` 用于保证头文件只被编译一次  
-•	``` #pragma one``` 与编译器相关，不一定被支持
-•	在工程中的使用：
+``` #pragma one``` 用于保证头文件只被编译一次  
+``` #pragma one``` 与编译器相关，不一定被支持
+在工程中的使用：
 ``` 
 •	#ifndef _HEADER_FILE_H_
 •	#define _HEADER_FILE_H_
@@ -58,8 +62,31 @@ https://github.com/DemonCloud/dotfile
 •	#endif
 ``` 
 
-
-
+## (3) warning参数  
+``` 
+#pragma  warning( disable: 4507 34; once: 4385; error: 164 )
+    等价于：  
+    #pragma  warning( disable: 4507 34 )    //  不显示4507和34号警告信息  
+    #pragma  warning( once: 4385 )          //  4385号警告信息仅报告一次  
+    #pragma  warning( error: 164 )          //  把164号警告信息作为一个错误。 
+同时这个pragma  warning  也支持如下格式：  
+    #pragma  warning( push [, n ] )  
+    #pragma  warning( pop )  
+    这里n代表一个警告等级(1---4)。  
+    #pragma  warning( push )保存所有警告信息的现有的警告状态。  
+    #pragma  warning( push, n )保存所有警告信息的现有的警告状态，并且把全局警告等级设定为n。    
+    #pragma  warning( pop )向栈中弹出最后一个警告信息，在入栈和出栈之间所作的一切改动取消。
+例如：  
+    #pragma  warning( push )  
+    #pragma  warning( disable: 4705 )  
+    #pragma  warning( disable: 4706 )  
+    #pragma  warning( disable: 4707 )  
+    //.......  
+    #pragma  warning(  pop  )    
+    在这段代码的最后，重新保存所有的警告信息(包括4705，4706和4707)。 
+``` 
+https://www.cnblogs.com/fnlingnzb-learner/p/5854494.html  
+https://blog.csdn.net/jacob__lei/article/details/79475926#t7
 
 
 
