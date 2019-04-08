@@ -2,8 +2,7 @@
 
 ``` 
 #define debug(fmt, ...) printf(fmt, __VA_ARGS__)  // GCC
-__VA_ARGS__替换可变参数
-
+__VA_ARGS__替换可变参数  
 #define debug2(fmt, args...) printf(fmt, args)   // GNU
 
 #define debug3(fmt, ...) printf(fmt, ##__VA_ARGS__)  //可以接受无参数(变参为空), ## 屏蔽逗号
@@ -26,9 +25,8 @@ https://github.com/DemonCloud/dotfile
 
 
 # 3. #Pragma 指令
-在所有的预处理指令中，#Pragma 指令可能是最复杂的了，它的作用是设定编译器的状态或者是指示编译器完成一些特定的动作。#pragma指令对每个编译器给出了一个方法，在保持与C和C++语言完全兼容的情况下，给出主机或操作系统专有的特征。依据定义，编译指示是机器或操作系统专有的，且对于每个编译器都是不同的。
-
-其格式一般为: #pragma  para。其中para为参数，下面来看一些常用的参数。
+在所有的预处理指令中，#Pragma 指令可能是最复杂的了，它的作用是设定编译器的状态或者是指示编译器完成一些特定的动作。#pragma指令对每个编译器给出了一个方法，在保持与C和C++语言完全兼容的情况下，给出主机或操作系统专有的特征。依据定义，编译指示是机器或操作系统专有的，且对于每个编译器都是不同的。  
+其格式一般为:  #pragma  para。  其中para为参数，下面来看一些常用的参数。  
 
 ## (1) message参数
 其使用方法为：  
@@ -39,6 +37,28 @@ https://github.com/DemonCloud/dotfile
 可以用下面的方法:
 
 ![效果图](https://github.com/qingcheng12/Universal-function/blob/master/image/1.jpg)
+
+我们定义了_X86这个宏以后，应用程序在编译时就会在编译输出窗口里显示"_86  macro  activated!"。
+
+<div align=center><img src="https://github.com/qingcheng12/Universal-function/blob/master/image/2.jpg" /></div>
+
+## (2) once参数
+
+•	``` #pragma one``` 用于保证头文件只被编译一次  
+•	``` #pragma one``` 与编译器相关，不一定被支持
+•	在工程中的使用：
+``` 
+•	#ifndef _HEADER_FILE_H_
+•	#define _HEADER_FILE_H_
+•	
+•	#pragma once
+•	
+•	// source code
+•	
+•	#endif
+``` 
+
+
 
 
 
