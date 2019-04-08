@@ -13,21 +13,19 @@ __VA_ARGS__替换可变参数
 ``` 
 *** 
 # 2. vim IDE配置
- 
+[vim + winmanager] : https://blog.csdn.net/u012385733/article/details/79038973
 
-https://blog.csdn.net/u012385733/article/details/79038973
+[vim配置及插件安装管理（超级详细)] : https://blog.csdn.net/namecyf/article/details/7787479?utm_source=blogxgwz0
 
-https://blog.csdn.net/namecyf/article/details/7787479?utm_source=blogxgwz0
+[Vim 实用插件推荐] : https://blog.csdn.net/guyue35/article/details/54412428
 
-https://blog.csdn.net/guyue35/article/details/54412428
+[Ubuntu 下 vim+Ctags+Taglist+WinManager工具的安装] : https://blog.csdn.net/eric_sunah/article/details/51028874
 
-https://blog.csdn.net/eric_sunah/article/details/51028874
-
-https://github.com/DemonCloud/dotfile
+[配置实例] : https://github.com/DemonCloud/dotfile
 
 ***  
 # 3. #Pragma 指令
-在所有的预处理指令中，#Pragma 指令可能是最复杂的了，它的作用是设定编译器的状态或者是指示编译器完成一些特定的动作。#pragma指令对每个编译器给出了一个方法，在保持与C和C++语言完全兼容的情况下，给出主机或操作系统专有的特征。依据定义，编译指示是机器或操作系统专有的，且对于每个编译器都是不同的。  
+在所有的预处理指令中， '#Pragma' 指令可能是最复杂的了，它的作用是设定编译器的状态或者是指示编译器完成一些特定的动作。#pragma指令对每个编译器给出了一个方法，在保持与C和C++语言完全兼容的情况下，给出主机或操作系统专有的特征。依据定义，编译指示是机器或操作系统专有的，且对于每个编译器都是不同的。  
 其格式一般为:  
 ``` c
 #pragma  para  
@@ -87,8 +85,8 @@ https://github.com/DemonCloud/dotfile
     #pragma  warning(  pop  )    
     在这段代码的最后，重新保存所有的警告信息(包括4705，4706和4707)。 
 ``` 
-https://www.cnblogs.com/fnlingnzb-learner/p/5854494.html  
-https://blog.csdn.net/jacob__lei/article/details/79475926#t7
+[#pragma的用法] : https://www.cnblogs.com/fnlingnzb-learner/p/5854494.html  
+[#pragma使用分析] : https://blog.csdn.net/jacob__lei/article/details/79475926#t7
 
 ***  
 # 4. GDB调试器  
