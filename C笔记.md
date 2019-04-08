@@ -1,4 +1,4 @@
-
+***  
 # 1. 可变参数宏
 
 ``` C
@@ -11,8 +11,9 @@ __VA_ARGS__替换可变参数
 #define C(x)  #x   // 一个#将参数字符串化
 
 ``` 
-
+*** 
 # 2. vim IDE配置
+ 
 
 https://blog.csdn.net/u012385733/article/details/79038973
 
@@ -24,7 +25,7 @@ https://blog.csdn.net/eric_sunah/article/details/51028874
 
 https://github.com/DemonCloud/dotfile
 
-
+***  
 # 3. #Pragma 指令
 在所有的预处理指令中，#Pragma 指令可能是最复杂的了，它的作用是设定编译器的状态或者是指示编译器完成一些特定的动作。#pragma指令对每个编译器给出了一个方法，在保持与C和C++语言完全兼容的情况下，给出主机或操作系统专有的特征。依据定义，编译指示是机器或操作系统专有的，且对于每个编译器都是不同的。  
 其格式一般为:  
@@ -89,7 +90,7 @@ https://github.com/DemonCloud/dotfile
 https://www.cnblogs.com/fnlingnzb-learner/p/5854494.html  
 https://blog.csdn.net/jacob__lei/article/details/79475926#t7
 
-
+***  
 # 4. GDB调试器  
 ``` c
 list(l)行号：显示某行源代码，每次列十行（上5行下5行）  
@@ -115,7 +116,7 @@ quit(q)：退出gdb调试
 list　　 显示当前行后面的源程序
 list -   显示当前行前面的源程序
 ``` 
-
+***  
 # 5. 调试打印 
 ```c
 // control  print switch
@@ -182,4 +183,4 @@ do{ /
     fprintf(stdout, __VA_ARGS__); /   
 }while(0)   
 ```
-
+***  
