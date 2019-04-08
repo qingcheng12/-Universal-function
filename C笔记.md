@@ -37,7 +37,8 @@ https://github.com/DemonCloud/dotfile
     当我们在程序中定义了许多宏来控制源代码版本的时候，我们自己有可能都会忘记有没有正确的设置这些宏，
 此时我们可以用这条指令在编译的时候就进行检查。假设我们希望判断自己有没有在源代码的什么地方定义了_X86这个宏,
 可以用下面的方法:
-!(https://github.com/qingcheng12/Universal-function/blob/master/image/1.jpg?raw=true)
+
+![效果图](https://github.com/qingcheng12/Universal-function/blob/master/image/1.jpg)
 
 
 
