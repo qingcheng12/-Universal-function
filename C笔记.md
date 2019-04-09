@@ -4,6 +4,7 @@
 ``` C
 #define debug(fmt, ...) printf(fmt, __VA_ARGS__)  // GCC
 __VA_ARGS__替换可变参数  
+
 #define debug2(fmt, args...) printf(fmt, args)   // GNU
 
 #define debug3(fmt, ...) printf(fmt, ##__VA_ARGS__)  //可以接受无参数(变参为空), ## 屏蔽逗号
@@ -40,7 +41,7 @@ __VA_ARGS__替换可变参数
 此时我们可以用这条指令在编译的时候就进行检查。假设我们希望判断自己有没有在源代码的什么地方定义了_X86这个宏,
 可以用下面的方法:
 
-![效果图](https://github.com/qingcheng12/Universal-function/blob/master/image/1.jpg)
+<div align=center><img src="https://github.com/qingcheng12/Universal-function/blob/master/image/1.jpg" /></div>
 
 我们定义了_X86这个宏以后，应用程序在编译时就会在编译输出窗口里显示"_86  macro  activated!"。
 
