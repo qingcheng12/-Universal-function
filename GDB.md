@@ -27,9 +27,9 @@ info
 
 参考链接
 
-https://www.ibm.com/developerworks/cn/linux/sdk/gdb/index.html 
-https://zhuanlan.zhihu.com/p/29468840 
-https://blog.csdn.net/taoyanqi8932/article/details/53385022
-https://www.cnblogs.com/mingcaoyouxin/p/4225619.html
-http://blog.jobbole.com/107759/
+https://www.ibm.com/developerworks/cn/linux/sdk/gdb/index.html    
+https://zhuanlan.zhihu.com/p/29468840   
+https://blog.csdn.net/taoyanqi8932/article/details/53385022  
+https://www.cnblogs.com/mingcaoyouxin/p/4225619.html  
+http://blog.jobbole.com/107759/  
 
