@@ -234,3 +234,15 @@ https://github.com/me115/linuxtools_rst
 
 从偏移角度理解a[0] 0为偏移量，如果从1计数，会多出K-1。增加cpu负担。  
 为什么循环要写成 for(inti=0;i<3;i++)而不是 for(inti=0;i<=2;i++)。第一个直接就可以算出3-0 = 3 有三个数据，而后者 2-0+1个数据，多出1个加法运算，很恼火。
+
+# 9. Github搜索技巧
+Awesome + 关键字 可以搜索关键字相关的优秀项目  
+假如你想搜索star大于10k的C项目，可以使用：language:C stars:>10000进行搜索  
+https://github.com/search/advanced 高级搜索  
+https://github.com/trending  github项目排行榜  
+
+
+
+
+
+
